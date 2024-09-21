@@ -1,0 +1,62 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registr.css' )}}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="back-to-home">
+        <!-- <img src="../Statics/img/back.png" alt=""> -->
+        <!-- <ion-icon name="chevron-back-outline"></ion-icon> -->
+        <a href="{{ url_for('Home')}}"><ion-icon name="chevron-back-outline"></ion-icon>Back to Home</a>
+    </div>
+    <div class="container">
+        <div class="form_container">
+            <div class="head">
+                <p>
+                    <a href="{{ url_for('Login')}}" >
+                        Login
+                    </a>
+                    <span>&nbsp;/&nbsp;</span>
+                    <a href="{{ url_for('Registr')}}" id="login">Registr</a>
+                </p>
+            </div>
+            <div class="form">
+                <form action="/sumbit", method="POST">
+                    <label for="name">
+                        <input type="text" name="name" id="name" placeholder="Enter your name!" autocomplete="off" required>
+                        <span></span>
+                    </label>
+                    <label for="email" style="margin-top: 1rem;">
+                        <input type="email" name="email" id="email" placeholder="Enter your email!" autocomplete="off" required>
+                        <span></span>
+                    </label>
+                    <label for="password" style="margin-top: 1rem;">
+                        <input type="password" name="password" id="password" placeholder="Enter your password!" autocomplete="off" required>
+                        <span></span>
+                    </label>
+                    <label for="re-password" style="margin-top: 1rem;"></label>
+                        <input type="password" name="re-password" id="re-password" placeholder="Enter your re-password!" autocomplete="off" required>
+                        <span></span>
+                    </label>
+                    <label for="checked"  class="check">
+                        <input type="checkbox" name="" id="checked">
+                        <span>Remember me!</span>
+                    </label>
+                    <a href="" class="forgot">
+                        Forgot you password?
+                    </a>
+                    <button class="button">
+                        <p>
+                            Register
+                        </p>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

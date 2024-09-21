@@ -1,0 +1,212 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/solid-bar.css')}}">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <section class="container">
+        <section class="about_us">
+            <section class="left">
+                <section class="left-head">
+                    <img src="{{ url_for('static', filename='img/logo.png')}}" alt="">
+                    <span><b>CodeX</b></span>
+                </section>
+                <section class="body_cont">
+                    <section class="body">
+                        <h1>You Can</h1>
+                        <h1>Hire Freelancer</h1>
+                        <h1>Here</h1>
+                        <h3>It is a long established fact that a reader will be distracted by the readable content of a page</h3>
+                        <section class="button">
+                            <section class="button_cont">
+                                <button>About Us</button>
+                                <button>Get a Quoto</button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+                <ion-icon name="arrow-forward-outline" style="background-color: #1a2e35; z-index: 10000;"></ion-icon>
+            </section>
+            <section class="right">
+                <img src="{{ url_for('static', filename='img/slider-img.png')}}" alt="">
+                <section class="side-bar-icon" id="side-bar-icon">
+                    <!-- <span id="span"></span>
+                    <span id="spanid2" ></span>
+                    <span id="span3"></span> -->
+                    <ion-icon name="grid" class="gird"></ion-icon>
+                </section>
+            </section>
+            <div class="solid-bar-of-link" id="solid-bar-of-link">
+                <div class="solid-bar-cont">
+                    <div class="solid-bar-left">
+                        <a href="{{ url_for('Home')}}">Home</a>
+                        <a href="{{ url_for('About')}}">About</a>
+                        <a href="#">Category</a>
+                    </div>
+                    <div class="solid-bar-right">
+                        <a href="{{ url_for('Login')}}">
+                            Login
+                        </a>
+
+                        <a href="{{ url_for('Registr')}}"> / Register</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="read_more">
+            <section class="read_more_container">
+                <section class="img">
+                    <img src="{{ url_for('static', filename='img/experience-img.jpg')}}" alt="">
+                </section>
+                <section class="read_more_body">
+                    <section class="read_head">
+                        Best Experinced Freelancer Here
+                    </section>
+                    <section class="read_body">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                    </section>
+                    <section class="read_button">
+                        <section class="read_button_container">
+                            <button class="button_read_1">Read More</button>
+                            <button class="button_read_2">Hire</button>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>       
+        <section class="category">
+            <section class="head_category">
+                <p>Category</p>
+            </section>
+            <section class="category_cont">
+               <section class="img_category">
+                <img src="{{ url_for('static', filename='img/c1.png')}}" alt="">
+                <span>Design & Arts</span>
+               </section>
+               <section class="img_category">
+                <img src="{{ url_for('static', filename='img/c2.png')}}" alt="">
+                <span>Web Development</span>
+               </section>
+               <section class="img_category">
+                <img src="{{ url_for('static', filename='img/c3.png')}}" alt="">
+                <span>SEO Markting</span>
+               </section>
+               <section class="img_category">
+                <img src="{{ url_for('static', filename='img/c4.png')}}" alt="">
+                <span>Video Edting</span>
+               </section>
+               <section class="img_category">
+                <img src="{{ url_for('static', filename='img/c4.png' )}}" alt="">
+                <span>Logo Design</span>
+               </section>
+               <section class="img_category">
+                <img src="{{ url_for('static', filename='img/c6.png' )}}" alt="">
+                <span>Game Design</span>
+               </section>
+            </section>
+        </section>
+        <section class="contact_me">
+            <section class="contac-me-cont">
+                <section class="contact-me-head">
+                    <section class="logo">
+                        <img src="{{ url_for('static', filename='img/logo.png' )}}" alt="">
+                        <span>CodeX</span>
+                    </section>
+                    <section class="social-network">
+                        <section>
+                            <section class="social">
+                                <img src="{{ url_for('static', filename='img/fb.png' )}}" alt="">
+                            </section>
+                            <section class="social">
+                                <img src="{{ url_for('static', filename='img/twitter.png' )}}" alt="">
+                            </section>
+                            <section class="social">
+                                <img src="{{ url_for('static', filename='img/linkedin.png' )}}" alt="">
+                            </section>
+                            <section class="social">
+                                <img src="{{ url_for('static', filename='img/instagram.png' )}}" alt="">
+                            </section>
+                            <section class="social">
+                                <img src="{{ url_for('static', filename='img/youtube.png' )}}" alt="">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <section class="contact-me-body">
+                    <section class="body-contact-about">
+                        <section class="body-contact-about-head">
+                            <span>Useful Link</span>
+                        </section>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Category</a>
+                    </section>
+                    <section class="body-contact-about">
+                        <section class="body-contact-about-head" style="margin-left: 1rem;">
+                            <span>Offices</span>
+                        </section>
+                        <p>
+                            Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
+                        </p>
+                    </section>
+                    <section class="body-contact-about">
+                        <section class="body-contact-about-head" style="margin-left: 1rem;">
+                            <span>Information</span>
+                        </section>
+                        <p>
+                            Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
+                        </p>
+                    </section>
+                    <section class="body-contact-about">
+                        <h1>Newsletter</h1>
+                        <form action="">
+                            <input type="email" placeholder="Email">
+                            <button>Subscribe!</button>
+                        </form>
+                    </section>
+                </section>
+                <section class="contact-me-footer">
+                    <section>
+                        <img src="{{ url_for('static', filename='img/location.png' )}}" alt="">
+                        <span>Baku/Khrdalan/Aaaf Park</span>
+                    </section>
+                    <section>
+                        <img src="{{ url_for('static', filename='img/mail.png' )}}" alt="">
+                        <span>thntg0906@gmail.com</span>
+                    </section>
+                    <section>
+                        <img src="{{ url_for('static', filename='img/call.png' )}}" alt="">
+                        <span>(+994)77-310-94-45</span>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="footer">
+            &copy;Bütün hüquqlar CodeX tərəfindən qorunur...
+        </section>
+    </section>
+
+    <script>
+        document.getElementById('side-bar-icon').addEventListener('click', function() {
+            var solidBar = document.getElementById('solid-bar-of-link');
+            if (solidBar.style.display === 'flex') {
+                solidBar.style.display = 'none';
+                solidBar.style.transition = ".8s";
+            } else {
+                solidBar.style.display = 'flex';
+                solidBar.style.transition = ".8s";
+
+            }
+        });
+    </script>
+</body>
+</html>

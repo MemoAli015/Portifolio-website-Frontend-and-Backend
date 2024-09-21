@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#login{
+    background-color: #1cbbb4;
+    padding:.3rem .8rem .6rem 1rem;
+    border-radius: 10rem;
+}
+
+html{
+    font-size: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1cbbb4;
+}
+
+.form_container{
+    background-color: #1a2e35;
+    width: 60rem;
+    height: 30rem;
+    /* background-color: rgb(186 199 227);
+    color: ; */
+    padding:1rem 2rem;
+    border-radius: 2rem;
+}
+
+.head{
+    width: 100%;
+    height: 5rem;
+    /* border-bottom: .1rem solid rgb(56 59 67); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head p{
+    color: rgb(186 199 227);
+    font-size: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.form{
+    width: 100%;
+    height: 30rem;
+}
+
+form{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction:column ;
+}
+
+input{
+    width: 100%;
+    height: 4rem;
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    border-bottom: .1rem solid rgb(186 199 227);
+    color: rgb(186 199 227);
+    padding: .5rem;
+}
+
+input::placeholder{
+    color: rgb(186 199 227);
+    opacity: 1;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.check input[type="checkbox"] {
+    display: none; /* Checkbox-un default görünüşünü gizləyir */
+}
+
+.check span {
+    position: relative;
+    padding-left: 30px;
+    line-height: 20px;
+    color: rgb(186 199 227);
+}
+
+.check span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.check input[type="checkbox"]:checked + span::before {
+    background-color: #1cbbb4;
+    border-color: rgb(59 71 94);
+}
+
+.check input[type="checkbox"]:checked + span::after {
+    content: "✔";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.forgot{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: end;
+    font-size: 1.6rem;
+    color: rgb(186 199 227);
+}
+
+.button{
+    width: 100%;
+    height: 3rem;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button p{
+    color: rgb(186 199 227);
+    font-size: 2rem;
+    background-color: #1cbbb4;
+    width:10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius:2rem;
+    border-top-right-radius: 2rem;
+}
+
+.button p:hover{
+    transition: ease-in-out .5s ;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+
+}
+
+/* ----------------- */
+
+body{
+    position: relative;
+}
+
+.back-to-home{
+    width: 15rem;
+    height: 5rem;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.back-to-home ion-icon{
+    /* width: 3rem;
+    height: 3rem; */
+    font-size: 4rem;
+    color: #1a2e35;
+    cursor: pointer;
+}
+
+.back-to-home a{
+    text-decoration: none;
+    color: #1a2e35;
+    font-size: 1.8rem;
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.back-to-home a:hover{
+    color: #fff;
+    transition: color .8s;
+    
+}
